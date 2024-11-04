@@ -1,0 +1,122 @@
+#cs_ac_nav {
+	background-color: #e8e8e8;
+	padding: 10px
+}
+#cs_ac_nav .navbar {
+	padding: 0
+}
+#cs_ac_nav .cs_1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center
+}
+#cs_ac_nav .cs_mbl {
+	font-weight: 700;
+	color: #373d7b;
+	font-size: 1.2em
+}
+#cs_ac_nav .navbar-toggler {
+	padding: 5px;
+	border: 1px dotted #373d7b
+}
+#cs_ac_nav .navbar-toggler img {
+	width: 30px
+}
+#cs_ac_nav .navbar-nav {
+	flex-wrap: wrap
+}
+#cs_ac_nav .navbar-nav .nav-link {
+	padding: 10px;
+	border-radius: 0;
+	background-color: #373d7b;
+	color: #fff
+}
+#cs_ac_nav .navbar-nav .nav-link.yello {
+	background-color: #f90
+}
+#cs_ac_nav .navbar-nav .nav-link.light_bl {
+	background-color: #06c
+}
+#cs_ac_nav .navbar-nav .dropdown-menu {
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+	border: none
+}
+#cs_ac_nav .navbar-nav .dropdown-item {
+	padding: 10px;
+	font-size: .8em;
+	color: #000;
+	font-weight: 700
+}
+#cs_ac_nav .navbar-nav .dropdown-item:hover, #cs_ac_nav .navbar-nav .dropdown-item:focus, #cs_ac_nav .navbar-nav .dropdown-item:active {
+	color: #373d7b;
+	background-color: #fff
+}
+.f_box {}
+.f_box h4 {}
+.f_box .gridi {
+	padding: 25px 10px;
+	border-radius: 5px
+}
+.f_box .gridi .content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center
+}
+.f_box .gridi .content .cs_icon {}
+.f_box .gridi .content .cs_icon i {
+	font-size: 2.5em;
+	color: rgba(255, 255, 255, .42)
+}
+.f_box .gridi .content .cs_text {
+	color: #fff;
+	text-align: right
+}
+.f_box .gridi .content .cs_text p {}
+.f_box .gridi .content .cs_text p:first-child {
+	margin-bottom: 5px;
+	font-weight: 700
+}
+#user_image {
+	display: flex
+}
+#user_image img {
+	border-radius: 50%;
+	border: 1px solid #f26418;
+	width: 80px
+}
+#user_image h4 {
+	margin-left: 25px;
+	text-transform: capitalize
+}
+#cs_marquee .cs_marquees span {
+	line-height: 38px;
+	min-width: 100px
+}
+#cs_marquee .default-ticker {
+	width: calc(100% - 100px);
+	border: 1px solid #f0f0f0
+}
+#cs_marquee .default-ticker a {
+	color: #000;
+	display: inline-block;
+	margin: 5px 15px 5px 0
+}
+#cs_marquee .default-ticker a:hover {
+	color: #ee4930
+}
+#cs_marquee .default-ticker a img {
+	border-radius: 3px;
+	margin-right: 5px;
+	height: 26px;
+	width: auto
+}
+#cs_topbar .logo a img {
+    height: 80px;
+}
+@media (max-width: 768px) {
+#cs_topbar .logo a img {
+    height: 50px;
+}
+}

@@ -1,0 +1,115 @@
+// Topbar
+#cs_topbar {
+    background: #021a40;
+    .content {
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:10px 0;
+    }
+    .logo {
+        a {
+            display: inline-block;
+            img {
+                height:50px;
+                width:auto;
+                @media (max-width: $break_768) {
+                    height:30px;
+                }
+            }
+        }
+    }
+    .advertisement {
+        @media (max-width: $break_768) {
+            display: none;
+        }
+        a {
+            display: inline-block;
+        }
+    }
+}
+// Nav Toggler
+.navbar-toggler {
+    color:$clr_white;
+    font-size:1em;
+    border:1px dotted $clr_white;
+    border-radius:0;
+    @media (min-width: $break_768) {
+        display: none;
+    }
+}
+// Menu
+#cs_menu {
+    border-bottom: 1px solid #f0f0f0;
+    .navbar {
+        padding:0;
+    }
+    @media (min-width: $break_768) {
+        .dropdown:hover>.dropdown-menu {
+            display: block;
+        }
+    }    
+    .nav-link {
+        text-transform: uppercase;
+        color:#333;
+        padding: 15px 10px;
+        font-size: 0.9em;
+        @media (max-width: $break_991) {
+            padding:6px 15px;
+            text-transform: capitalize;
+        }
+        &:hover, &.active {
+            color:$clr_main;
+        }
+    }
+    .dropdown-menu {
+        font-size: 0.8em;
+        border-radius: 0;
+        padding: 0;
+        text-transform: uppercase;
+        margin-top:0;
+        background-color:$clr_main;
+        a {
+            padding:5px;
+            color:$clr_white;
+            display: block;
+            &:hover, &.active {
+                color:$clr_white;
+                background-color:$clr_black;
+            }
+        }
+    }
+    .form-inline {
+        position: relative;
+        @media (max-width: $break_991) {
+            display: none;
+        }
+        .form-control {
+            border: 1px solid #eeeeee;
+            padding: 6px;
+            line-height: 1.2;
+            font-size: 0.8em;
+            border-radius: 0px;
+            min-width: 200px;
+            font-weight: 700;
+            &:focus {
+                box-shadow:none;
+                outline:none;
+            }
+        }
+        .search_btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: transparent;
+            border: none;
+            font-size: 0.8em;
+            height: 100%;
+            cursor: pointer;
+            &:hover, &:focus {
+                box-shadow:none;
+                outline:none;
+            }
+        }
+    }
+}

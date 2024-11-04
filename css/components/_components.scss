@@ -1,0 +1,72 @@
+// pagination style
+.pagination-box {
+    font-size:0.8em;
+    margin-top:30px;
+    .pagination-list {
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            margin-right: 3px;
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color:lighten($clr_black, 20%);
+                padding: 4px 10px;
+                border: 1px solid #f0f0f0;
+                border-radius: 3px;
+                &:hover, &.active {
+                    border: 1px solid $clr_main;
+                    background: $clr_main;
+                    color: $clr_white;
+                }
+            }
+            span {
+                display: inline-block;
+                margin: 0;
+                color:lighten($clr_black, 20%);
+            }
+        }
+    }
+    p {
+        text-align: right;
+        margin-top: -22px;
+        color:lighten($clr_black, 20%);
+    }
+}
+// List
+.ul_disk {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+.ul_number {
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+// Table 
+.table_code {
+    thead {
+        tr {
+            th {
+                background-color:$clr_main;
+                color:$clr_white;
+                border: 1px solid $clr_main;
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                border: 1px solid #dee2e6;
+                a {
+                    color:$clr_main;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
